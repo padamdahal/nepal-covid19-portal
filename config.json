@@ -1,0 +1,68 @@
+{
+	"casesByAge": {
+		"config": {
+			"title": "Age and Sex",
+			"rows": ["Sex"],
+			"cols": ["Age"],
+			"renderers": "plotly_renderers",
+			"type": "Stacked Bar Chart",
+			"height": "530",
+			"width": "550",
+			"yaxis":{"title":"Number of cases"},
+			"xaxis":{"title":"Age group"},
+			"containerWidth": "4"
+		}
+	},
+	"casesByProvince": {
+		"config": {
+			"title": "Province",
+			"rows": ["Province"],
+			"cols": ["Sex"],
+			"renderers": "plotly_renderers",
+			"type": "Horizontal Stacked Bar Chart",
+			"height": "530",
+			"width": "550",
+			"xaxis":{"title":"Number of cases"},
+			"containerWidth": "4"
+		}
+	},
+	"casesByDistrict": {
+		"config": {
+			"title": "Districts",
+			"rows": [],
+			"cols": ["District"],
+			"renderers": "plotly_renderers",
+			"type": "Bar Chart",
+			"height": "530",
+			"width": "550",
+			"yaxis":{"title":"Number of cases"},
+			"containerWidth": "12"
+		}
+	},
+	"weeklyChart": {
+		"config": {
+			"title": "Cases reported by week",
+			"rows": [],
+			"cols": ["Period"],
+			"renderers": "plotly_renderers",
+			"type": "Line Chart",
+			"height": "530",
+			"yaxis":{"title":"Number of cases"},
+			"containerWidth": "6",
+			"apiParameter": "type=weekly"
+		}
+	},
+	"last14daysChart": {
+		"config": {
+			"title": "Daily new cases (last 14 days)",
+			"rows": [],
+			"cols": ["Period"],
+			"renderers": "plotly_renderers",
+			"type": "Line Chart",
+			"height": "530",
+			"yaxis":{"title":"Number of cases"},
+			"containerWidth": "6",
+			"apiParameter": "type=last_14_days"
+		}
+	}
+}
